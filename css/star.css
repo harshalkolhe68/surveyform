@@ -1,0 +1,58 @@
+label:before {
+  content: '☆';
+  color: black;
+  font-size: 2em;
+}
+label.on:before {
+  content: '★';
+  color: black;
+
+}
+input:checked + label:before {
+  content: '★'; 
+  color: black;
+  
+}
+label {  
+  display: inline-block;  
+  cursor: pointer;  
+  position: relative;  
+  padding-left: 25px;  
+  margin-right: 15px;  
+  font-size: 15px; 
+}
+label:before {
+  display: inline-block;
+  width: 20px;
+  height: 5px;
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  border-radius: 10px;
+}
+input[type=radio] {
+  display: none;
+  -webkit-appearance: none;
+}
+
+.question {
+  margin-bottom: 10mm;
+}
+#q1 {
+  margin-top: 0.1em;
+}
+p {
+  font-size: 15px;
+  color: #555;
+  text-transform: capitalize;
+  display: block;
+  font-weight: bold;
+}
+
+/* body {
+  margin: 2em;
+  background-color: #448AC1;
+  text-align: center;
+  -webkit-tap-highlight-color:#555;
+ 
+} */
